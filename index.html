@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RetroFun</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="brand">
+          <img src="hero/logo.jpg" alt="logo" class="logo-img" />
+          <span
+            ><span style="color: #8937e4">RETRO</span
+            ><span style="color: #ffffff">FUN</span></span
+          >
+        </a>
+
+        <!--hamburger-->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="#heroSection">Home</a></li>
+          <li><a href="#aboutSection">About</a></li>
+          <li><a href="#gameSection">Games</a></li>
+          <li><a href="#contactSection">Contact</a></li>
+          <form action="#gameSection" class="search">
+            <input type="search" placeholder="Search classics..." required id="search" />
+            <button type="submit">
+              <svg viewBox="0 0 24 24">
+                <path d="M21 21l-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0
+                1 0 15z" fill="none" stroke=" rgba(0, 242, 255, 1)""
+                stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+          </form>
+        </ul>
+      </div>
+    </header>
+    <section id="heroSection">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>
+            RELIVE YOUR
+            <span style="color: #00ffff; text-shadow: 0 0 15px #00ffff"
+              >NOSTALGIA</span
+            >
+          </h1>
+          <p>
+            Rediscover the golden age of gaming. Play your favorite classics and
+            discover new gems.
+          </p>
+          <div class="hero-btns">
+            <a href="#gameSection" class="btn btn-primary">PRESS START</a>
+            <a href="#aboutSection" class="btn btn-secondary">LEARN MORE</a>
+          </div>
+        </div>
+        <div class="visualz">
+          <div class="floatingpngs">
+            <img src="hero/ufo.png" alt="ufo" class="pixelIcon ufo" />
+            <img src="hero/mario.png" alt="mario" class="pixelIcon mario" />
+            <img
+              src="hero/controler.png"
+              alt="controler"
+              class="pixelIcon controler"
+            />
+            <img
+              src="hero/joystick.png"
+              alt="joystick"
+              class="pixelIcon joystick"
+            />
+            <img src="hero/arcade.png" alt="arcade" class="pixelIcon arcade" />
+          </div>
+          <div class="visual-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider">
+      <div class="divider-line"></div>
+    </div>
+
+    <section id="aboutSection">
+      <div class="about-container">
+        <div class="about-text">
+          <h2 class="abouttitle">
+            THE <span style="color: #00ffff">MISSION</span>
+          </h2>
+          <div class="typewritter">
+            <p class="about-paragraph">
+              RetroFun was designed for those longing to live those childhood
+              memories they once cherished.
+            </p>
+            <p class="about-paragraph delay">
+              No downloads. Just pure nostalgia.
+            </p>
+          </div>
+        </div>
+        <div class="about-visualz">
+          <div class="floatingPngs">
+            <img src="about/frdy.png" alt="freddy" class="aboutIcon freddy" />
+            <img src="about/trex.png" alt="trex" class="aboutIcon trex" />
+            <img src="about/pacman.png" alt="pacman" class="aboutIcon pacman" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="dividerabout">
+      <div class="divider-lineabout"></div>
+    </div>
+    <section id="gameSection" class="game-gallery">
+      <div class="games-header">
+        <h2 class="game-title">
+          CHOOSE YOUR <span style="color: #00ffff">GAME</span>
+        </h2>
+        <p class="game-describ">
+          we have a massive vault of classics. Click any icon to start playing!
+        </p>
+      </div>
+      <div class="icon-grid">
+        <a
+          href="https://emupedia.net/emupedia-game-binding-of-isaac/"
+          target="_blank"
+          class="game-card"
+        >
+          <img src="games/isaac.png" alt="isaac" class="game-icon" />
+          <span class="game-name">The Binding Of Isaac</span>
+        </a>
+        <a
+          href="https://emupedia.net/emupedia-game-fnaf/"
+          target="_blank"
+          class="game-card"
+        >
+          <img src="games/fnaf.png" alt="fnaf" class="game-icon" />
+          <span class="game-name">Five Nights at Freddy's</span>
+        </a>
+        <a
+          href="https://eaglercraft.com/play/?version=1.12.2"
+          target="_blank"
+          class="game-card"
+        >
+          <img src="games/minecraft.png" alt="minecraft" class="game-icon" />
+          <span class="game-name">Minecraft 1.12</span>
+        </a>
+        <a
+          href="https://emupedia.net/emupedia-game-pvz/"
+          target="_blank"
+          class="game-card"
+        >
+          <img src="games/pvz.png" alt="pvz" class="game-icon" />
+          <span class="game-name">PlantsVsZombies</span>
+        </a>
+        <a
+          href="https://emupedia.net/emupedia-game-mario/"
+          target="_blank"
+          class="game-card"
+        >
+          <img src="games/mario.png" alt="mario" class="game-icon" />
+          <span class="game-name">Super Mario</span>
+        </a>
+        <a
+          href="https://emupedia.net/emupedia-game-zelda/"
+          target="_blank"
+          class="game-card"
+        >
+          <img src="games/zelda.png" alt="zelda" class="game-icon" />
+          <span class="game-name">The Legend of Zelda</span>
+        </a>
+        <a
+          href="https://emupedia.net/emupedia-game-minesweeper/"
+          target="_blank"
+          class="game-card"
+        >
+          <img
+            src="games/minesweeper.png"
+            alt="Minesweeper"
+            class="game-icon"
+          />
+          <span class="game-name">Minesweeper</span>
+        </a>
+        <a
+          href="https://pacman-e281c.firebaseapp.com/"
+          target="_blank"
+          class="game-card"
+        >
+          <img src="about/pacman.png" alt="pacman" class="game-icon" />
+          <span class="game-name">Pacman</span>
+        </a>
+        <a
+          href="https://turbowarp.org/embed.html?autoplay#31651654"
+          target="_blank"
+          class="game-card"
+        >
+          <img src="games/tetris.png" alt="tetris" class="game-icon" />
+          <span class="game-name">Tetris</span>
+        </a>
+        <a href="https://papaspizzeria.io/" target="_blank" class="game-card">
+          <img src="games/papas.png" alt="papas" class="game-icon" />
+          <span class="game-name">Papa's Pizzeria</span>
+        </a>
+        <a href="https://flappybird.io/" target="_blank" class="game-card">
+          <img src="games/flappybird.png" alt="flappybird" class="game-icon" />
+          <span class="game-name">flappy bird</span>
+        </a>
+        <a
+          href="https://orteil.dashnet.org/cookieclicker/"
+          target="_blank"
+          class="game-card"
+        >
+          <img
+            src="games/cookieclicker.png"
+            alt="cookieclicker"
+            class="game-icon"
+          />
+          <span class="game-name">Cookie Clicker</span>
+        </a>
+        <a
+          href="https://emupedia.net/emupedia-game-solitaire/"
+          target="_blank"
+          class="game-card"
+        >
+          <img src="games/solitare.png" alt="solitare" class="game-icon" />
+          <span class="game-name">Classic Solitare</span>
+        </a>
+        <a
+          href="https://emupedia.net/emupedia-game-doom1/"
+          target="_blank"
+          class="game-card"
+        >
+          <img src="games/doom.png" alt="doom" class="game-icon" />
+          <span class="game-name">Doom 1</span>
+        </a>
+        <a
+          href="https://archive.org/details/FPA-1#"
+          target="_blank"
+          class="game-card"
+        >
+          <img src="games/fancypants.png" alt="fancypants" class="game-icon" />
+          <span class="game-name">Fancy pants</span>
+        </a>
+        <a
+          href="https://www.coolmathgames.com/0-worlds-hardest-game"
+          target="_blank"
+          class="game-card"
+        >
+          <img
+            src="games/wordshardest.png"
+            alt="worldshardestgame"
+            class="game-icon"
+          />
+          <span class="game-name">Worlds Hardest Game</span>
+        </a>
+        <a
+          href="https://www.twoplayergames.org/game/boxhead-2play"
+          target="_blank"
+          class="game-card"
+        >
+          <img src="games/boxhead.png" alt="boxhead" class="game-icon" />
+          <span class="game-name">Boxhead</span>
+        </a>
+        <a href="https://freeinvaders.org/" target="_blank" class="game-card">
+          <img
+            src="games/spaceinvader.png"
+            alt="spaceinvader"
+            class="game-icon"
+          />
+          <span class="game-name">Space invaders</span>
+        </a>
+        <a href="https://purble-place.io/" target="_blank" class="game-card">
+          <img src="games/purple.png" alt="purple" class="game-icon" />
+          <span class="game-name">Purble Place</span>
+        </a>
+        <a
+          href="https://www.crazygames.com/game/bartender-the-right-mix"
+          target="_blank"
+          class="game-card"
+        >
+          <img src="games/bartender.png " alt="bartender" class="game-icon" />
+          <span class="game-name">Bartender The Right Mix</span>
+        </a>
+        <a
+          href="https://games.peta.org/cookingmama/GameFrame.html?skiptitle=1"
+          target="_blank"
+          class="game-card"
+        >
+          <img src="games/cookingmama.png " alt="bartender" class="game-icon" />
+          <span class="game-name">Cooking Mama</span>
+        </a>
+        <a
+          href="https://www.friv.com/z/games/raftwars/game.html"
+          target=   "_blank"
+          class="game-card"
+        >
+          <img src="games/raftwars.png " alt="bartender" class="game-icon" />
+          <span class="game-name">Raft wars</span>
+        </a>
+      </div>
+    </section>
+    <div class="dividergames">
+      <div class="divider-linegames"></div>
+    </div>
+    <section id="contactSection">
+      <div class="contact-container">
+        <h2 class="contacttitle">
+          GET IN <span style="color: #00ffff">TOUCH</span>
+        </h2>
+        <div class="contact-info">
+          <p class="contact-paragraph">
+            ADMIN_EMAIL: <a href="#" class="email-link">retrofun@gmail.com</a>
+          </p>
+          <p class="contact-paragraph">
+            SYSTEM_STATUS: <span style="color: #39ff14">ONLINE</span>
+          </p>
+        </div>
+        <div class="social-grid">
+          <a href="" class="social-card">
+            <img src="contact/discord.png" alt="discord" class="game-icon" />
+            <span class="game-name">DISCORD</span>
+          </a>
+          <a href="" class="social-card">
+            <img src="contact/ig.png" alt="ig" class="game-icon" />
+            <span class="game-name">INSTAGRAM</span>
+          </a>
+          <a href="" class="social-card">
+            <img
+              src="contact/twitter.png"
+              alt="twitter"
+              class="game-icon"
+              style="border-radius: 12px"
+            />
+            <span class="game-name">TWITTER</span>
+          </a>
+          <a href="" class="social-card">
+            <img src="contact/facebook.png" alt="facebook" class="game-icon" />
+            <span class="game-name">FACEBOOK</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="retrofooter">
+      <div class="footer-content">
+        <div class="dividerfoot">
+          <div class="divider-linefoot"></div>
+        </div>
+        <p class="footer-text">
+          © 2026 <span style="color: #00ffff">RETROFUN</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
